@@ -4,6 +4,22 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+        x.inv <- NULL
+        set <- function(y) {
+                if(is.matrix(y){
+                        x <<- y
+                        x.inv <<- NULL
+                }
+                else {
+                        print("Provided value is not a Matrix")
+                }
+        }
+        get <- function() x
+        setInverted <- function(Inverted) x.inv <<- Inverted
+        getInverted <- function() x.inv
+        list(set = set, get = get,
+             setInverted = setInverted,
+             getInverted = getInverted)
 
 }
 
