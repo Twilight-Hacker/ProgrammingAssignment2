@@ -6,7 +6,7 @@
 makeCacheMatrix <- function(x = matrix()) {
         x.inv <- NULL
         set <- function(y) {
-                if(is.matrix(y){
+                if(is.matrix(y)){
                         x <<- y
                         x.inv <<- NULL
                 }
