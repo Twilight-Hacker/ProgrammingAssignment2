@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix(c(1,0,0,1),2,2)) { ##create a matrix, if 
         set <- function(y) {  ##function to set the matrix
                 if(is.matrix(y)){ ##apply value to x, only if the provided object is a matrix (we cannot assume that it is a matrix)
                         x <<- y
-                        x.inv <<- NULL ##reset the inverted matrix
+                        x.inv <<- NULL ##reset the inverted matrix value to NULL
                 }
                 else {
                         print("Provided variable is not a Matrix. Nothing set.") ##print a warning message
